@@ -43,9 +43,10 @@ describe('AccountController Unit Test', () => {
 
   describe('findAll', () => {
     it('En tant que client, je veux pouvoir accéder à la liste de mes comptes', async () => {
-      expect(await accountController.findAll()).toStrictEqual(
-        accountsMock.filter((a) => a.customer.customer_id === 1).map((a) => new AccountDto(a)),
-      );
+      expect(await accountController.findAll()).toStrictEqual({
+        data: accountsMock.filter((a) => a.customer.customer_id === 1).map((a) => new AccountDto(a)),
+        message: undefined,
+      });
     });
   });
 
@@ -53,7 +54,10 @@ describe('AccountController Unit Test', () => {
     it(`En tant que client, je veux pouvoir consulter l'historique des
     opérations effectuées sur mes comptes (date, montant, type, par qui,
     solde…)`, async () => {
-      expect(await accountController.findOne(1)).toStrictEqual(new AccountDto(accountsMock[0]));
+      expect(await accountController.findOne(1)).toStrictEqual({
+        data: new AccountDto(accountsMock[0]),
+        message: undefined,
+      });
     });
   });
 });

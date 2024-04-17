@@ -93,7 +93,7 @@ Depuis un terminal positionné dans le dossier backend:
 - Lancer le projet avec <code>yarn start:dev</code> ou <code>yarn start</code>
 - Pour lancer les tests, utiliser <code>yarn test</code> et <code>yarn test:cov</code> pour la coverage
 
-Une fois le projet lancé, la documentation Swagger est disponible à http://localhost:&lt;APP_PORT&gt;/api/docs
+Une fois le projet lancé, la documentation Swagger est disponible à http://localhost:APP_PORT/api/docs
 
 <h3>Frontend</h3>
 
