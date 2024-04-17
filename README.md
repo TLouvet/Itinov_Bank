@@ -147,3 +147,4 @@ Au sein du dossier src:
 
 - Pagination sur les transactions: le backend renverra pour l'instant les 50 dernières transactions, au delà il n'est pas possible d'accéder à l'historique.
 - Quelques tests sont à revoir
+- Quelques requêtes SQL implémentées en raw, pas évident à maintenir
