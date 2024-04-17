@@ -1,0 +1,32 @@
+{
+  "depositPage": {
+    "title": "Effectuer un dépôt"
+  },
+  "withdrawPage": {
+    "title": "Effectuer un retrait"
+  },
+  "transferPage": {
+    "title": "Effectuer un transfert"
+  },
+  "menu": {
+    "to": "Vers le compte",
+    "from": "Depuis le compte",
+    "amount": "Montant & Motif",
+    "validate": "Valider"
+  },
+  "labels": {
+    "amount": "Je choisis un montant de",
+    "motive": "Motif visible dans mon historique",
+    "search": "Rechercher un compte par numéro"
+  },
+  "helperText": {
+    "amount": "Entre 1€ et 10 000€ acceptés",
+    "motive": "Exemple : loyer, salaire, courses..."
+  },
+  "errors": {
+    "generic": "La demande sera refusée",
+    "amount": "Montant invalide"
+  },
+  "goBack": "Retourner au menu",
+  "maxOverdraft": "Découvert maximum:"
+}

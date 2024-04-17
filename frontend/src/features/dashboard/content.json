@@ -1,0 +1,17 @@
+{
+  "page": {
+    "title": "Mon Dashboard"
+  },
+  "agency": {
+    "title": "Mon agence"
+  },
+  "accounts": {
+    "title": "Mes comptes"
+  },
+  "actions": {
+    "title": "Mes actions",
+    "deposit": "Déposer des devises",
+    "withdraw": "Effectuer un retrait",
+    "transfer": "Effectuer un virement"
+  }
+}

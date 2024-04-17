@@ -68,12 +68,17 @@ En supposant que l’utilisateur est déjà connecté :
 <h3> Base de données </h3>
 
 Le projet est prévu pour tourner sous MySQL v8.
+
 Une BDD est nécessaire pour run le projet, ainsi qu'une autre pour lancer les tests d'intégration.
+
 Ces deux DB sont à reporter dans le fichier .env (voir prochaine section)
+
 Le fichier **script.sql** situé dans le dossier data permet d'importer les données à mettre en place pour utiliser l'application
+Le fichier **test-script.sql** situé dans le même dossier permet d'importer les données utilisées pendant les tests
 
 <h3>Backend</h3>
 A la racine du dossier backend, créer un fichier .env et remplir les variables suivantes:
+
 - DB_HOST=
 - DB_PORT=
 - DB_USERNAME=
@@ -120,9 +125,12 @@ Au sein du dossier src:
 - common: classes réutilisables d'un projet sur l'autre avec très peu de changement
 - features: modules liés à la logique métier
 
-Chaque feature est regroupée dans un module, les nom des fichiers représentent leur fonction
+Chaque feature est regroupée dans un module, les nom des fichiers représentent leur fonction.
+
 Si interaction avec la BDD, une implémentation Repository est également en place dans un fichier .repository
+
 Les représentations des objets en BDD sont suffixées par .entity.ts
+
 Les objets de validation sont suffixés par .dto.ts
 
 <h3>Architecture de code frontend</h3>
@@ -135,9 +143,7 @@ Au sein du dossier src:
 - router: contient les routes du projet
 - ui: des composants extrêmement simples et réutilisables, vides de toute logique métier, réutilisables d'un projet à l'autre
 
-<h3>Documentation Swagger</h3>
+<h2>Ce qui n'a pas été implémenté</h2>
 
-<h2>Vues de l'application</h2>
-<h3>Desktop</h3>
-<h3>Tablette</h3>
-<h3>Mobile</h3>
+- Pagination sur les transactions: le backend renverra pour l'instant les 50 dernières transactions, au delà il n'est pas possible d'accéder à l'historique.
+- Quelques tests sont à revoir
